@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  mailing_server:
+    restart: always
+    env_file: .env
+    build:
+      context: ./
+    ports:
+      - "64203:3000"
